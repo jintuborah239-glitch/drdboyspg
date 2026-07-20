@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DRD Boys PG | Garchuk, Guwahati</title>
+<meta name="description" content="DRD Boys PG in Garchuk, Guwahati. Comfortable single, double and triple-sharing rooms near Gramin Bank.">
+<style>
+:root{--bg:#0b0d0f;--card:#15191d;--muted:#aeb6bd;--text:#f5f7f8;--accent:#d7a85b;--accent2:#f0c879;--line:rgba(255,255,255,.1)}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:20px 6%;background:rgba(11,13,15,.72);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.logo{font-weight:800;letter-spacing:2px}.logo span{color:var(--accent)}.nav-links{display:flex;gap:24px;color:var(--muted);font-size:14px}.nav-links a:hover{color:var(--accent2)}
+.hero{min-height:92vh;display:grid;place-items:center;padding:130px 6% 80px;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(11,13,15,.95) 0%,rgba(11,13,15,.72) 45%,rgba(11,13,15,.35) 100%),url('bg.jpg') center/cover}
+.hero-content{max-width:720px}.eyebrow{color:var(--accent2);text-transform:uppercase;letter-spacing:3px;font-size:12px;font-weight:700}
+h1{font-size:clamp(48px,8vw,92px);line-height:.98;margin:18px 0 24px;letter-spacing:-3px}.hero p{max-width:560px;color:#d4d9dd;font-size:19px}
+.buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:999px;font-weight:700;border:1px solid var(--line);transition:.2s}.btn.primary{background:var(--accent);color:#17120a;border-color:var(--accent)}.btn.secondary{background:rgba(255,255,255,.06)}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+section{padding:90px 6%}.section-head{max-width:700px;margin-bottom:38px}.section-head h2{font-size:clamp(32px,5vw,54px);line-height:1.05;margin:10px 0 14px}.section-head p{color:var(--muted)}
+.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.price-card{background:linear-gradient(145deg,#1a2025,#111416);border:1px solid var(--line);border-radius:22px;padding:26px}.price-card h3{font-size:19px;margin-bottom:10px}.price{font-size:30px;font-weight:800;color:var(--accent2)}.price small{font-size:13px;color:var(--muted);font-weight:400}
+.gallery{display:grid;grid-template-columns:1.5fr 1fr;gap:16px}.gallery img{width:100%;height:100%;min-height:260px;object-fit:cover;border-radius:20px;border:1px solid var(--line)}.gallery .side{display:grid;gap:16px}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.feature{padding:22px;background:var(--card);border:1px solid var(--line);border-radius:18px}.feature strong{display:block;margin-bottom:6px}.feature p{color:var(--muted);font-size:14px}
+.location{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}.map-card{min-height:300px;border-radius:22px;border:1px solid var(--line);background:linear-gradient(135deg,#222a2f,#101315);display:grid;place-items:center;text-align:center;padding:30px}
+.contact-card{background:var(--accent);color:#18130b;border-radius:22px;padding:38px}.contact-card h2{font-size:38px;line-height:1.05;margin-bottom:14px}.contact-card p{margin-bottom:24px}.contact-card .btn{background:#18130b;color:white;border-color:#18130b}
+.phone-list{display:grid;gap:10px;margin:18px 0 24px}.phone-list a{font-weight:800;font-size:18px}
+footer{padding:30px 6%;border-top:1px solid var(--line);color:var(--muted);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:800px){.nav-links{display:none}.hero{min-height:85vh}.prices,.features,.location{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr}}
+@media(max-width:540px){section{padding:65px 5%}.prices,.features,.location{grid-template-columns:1fr}h1{letter-spacing:-2px}}
+
+/* Smooth, fluid movement for the price grid links */
+.prices a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Base pricing card adjustments for transition effects */
+.price-card {
+  transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.25s ease, background-color 0.2s ease;
+}
+
+/* Hover Animation: Smoothly floats upward */
+.price-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  background-color: rgba(255, 255, 255, 0.06);
+  cursor: pointer;
+}
+
+/* Click/Active Animation: Tactile physical press feedback */
+.price-card:active {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Canteen Menu Styles */
+.menu-section {
+  padding: 60px 6%;
+}
+.menu-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.menu-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 15px;
+  background: var(--card);
+}
+.menu-table th {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--accent);
+  padding: 16px;
+  font-weight: 600;
+  border-bottom: 2px solid var(--line);
+}
+.menu-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+  color: var(--text);
+}
+.menu-table tr:last-child td {
+  border-bottom: none;
+}
+.menu-table tr:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+.menu-note {
+  margin-top: 15px;
+  font-size: 14px;
+  color: var(--muted);
+}
+</style>
+</head>
+<body>
+<header class="nav">
+<a class="logo" href="#">DRD <span>BOYS PG</span></a>
+<nav class="nav-links"><a href="#rooms">Rooms</a><a href="#gallery">Gallery</a><a href="#canteen">Menu</a><a href="#location">Location</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+<section class="hero">
+<div class="hero-content">
+<div class="eyebrow">Garchuk · Guwahati</div>
+<h1>Your space.<br><span style="color:var(--accent2)">Your comfort.</span></h1>
+<p>Comfortable and affordable boys' PG accommodation near Gramin Bank, Garchuk, Guwahati.</p>
+<div class="buttons">
+<a class="btn primary" href="tel:+919864302433">Call Now</a>
+<a class="btn secondary" href="https://wa.me/919864302433?text=Hi%20DRD%20Boys%20PG%2C%20I%20would%20like%20to%20know%20about%20room%20availability." target="_blank">WhatsApp Enquiry</a>
+</div>
+</div>
+</section>
+<section id="availability" style="padding: 40px 6%; text-align: center;">
+  <h2 style="font-size: 28px; margin-bottom: 20px;">CURRENT ROOM AVAILABILITY</h2>
+  <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+    <div style="background: var(--card); padding: 15px 25px; border-radius: 8px; border: 1px solid var(--line);">
+      <strong>Single Room:</strong> <span style="color: #ff4d4d; font-weight: bold;">🔴 Full</span>
+    </div>
+    <div style="background: var(--card); padding: 15px 25px; border-radius: 8px; border: 1px solid var(--line);">
+      <strong>Double Sharing:</strong> <span style="color: #00e676; font-weight: bold;">🟢 12 Beds Left</span>
+    </div>
+    <div style="background: var(--card); padding: 15px 25px; border-radius: 8px; border: 1px solid var(--line);">
+      <strong>Triple Sharing:</strong> <span style="color: #00e676; font-weight: bold;">🟢 13 Bed Left</span>
+    </div>
+  </div>
+</section>
+<section id="rooms">
+<div class="section-head"><div class="eyebrow">Choose your room</div><h2>Simple pricing.<br>Comfortable living.</h2><p>Choose & book the room type that suits your needs and budget.</p></div>
+<div class="prices">
+  <!-- 1. Triple Sharing -->
+  <a href="https://wa.me/919864302433?text=Hi%20DRD%20Boys%20PG%2C%20I%20am%20interested%20in%20booking%20a%20Triple%20Sharing%20room%20(%E2%82%B98%2C000/month)." target="_blank" style="text-decoration: none; color: inherit; display: block;">
+    <div class="price-card"><h3>Triple Sharing</h3><div class="price">₹8,000 <small>/ month</small></div></div>
+  </a>
+
+  <!-- 2. Double Sharing -->
+  <a href="https://wa.me/919864302433?text=Hi%20DRD%20Boys%20PG%2C%20I%20am%20interested%20in%20booking%20a%20Double%20Sharing%20room%20(%E2%82%B99%2C000/month)." target="_blank" style="text-decoration: none; color: inherit; display: block;">
+    <div class="price-card"><h3>Double Sharing</h3><div class="price">₹9,000 <small>/ month</small></div></div>
+  </a>
+
+  <!-- 3. Triple Sharing - AC -->
+  <a href="https://wa.me/919864302433?text=Hi%20DRD%20Boys%20PG%2C%20I%20am%20interested%20in%20booking%20a%20Triple%20Sharing%20-%20AC%20room%20(%E2%82%B912%2C000/month)." target="_blank" style="text-decoration: none; color: inherit; display: block;">
+    <div class="price-card"><h3>Triple Sharing ・ AC</h3><div class="price">₹12,000 <small>/ month</small></div></div>
+  </a>
+
+  <!-- 4. Double Sharing - AC -->
+  <a href="https://wa.me/919864302433?text=Hi%20DRD%20Boys%20PG%2C%20I%20am%20interested%20in%20booking%20a%20Double%20Sharing%20-%20AC%20room%20(%E2%82%B913%2C000/month)." target="_blank" style="text-decoration: none; color: inherit; display: block;">
+    <div class="price-card"><h3>Double Sharing ・ AC</h3><div class="price">₹13,000 <small>/ month</small></div></div>
+  </a>
+
+  <!-- 5. Single - Non-AC -->
+  <a href="https://wa.me/919864302433?text=Hi%20DRD%20Boys%20PG%2C%20I%20am%20interested%20in%20booking%20a%20Single%20-%20Non-AC%20room%20(%E2%82%B911%2C000/month)." target="_blank" style="text-decoration: none; color: inherit; display: block;">
+    <div class="price-card"><h3>Single ・ Non-AC</h3><div class="price">₹11,000 <small>/ month</small></div></div>
+  </a>
+
+  <!-- 6. Single - AC -->
+  <a href="https://wa.me/919864302433?text=Hi%20DRD%20Boys%20PG%2C%20I%20am%20interested%20in%20booking%20a%20Single%20-%20AC%20room%20(%E2%82%B915%2C000/month)." target="_blank" style="text-decoration: none; color: inherit; display: block;">
+    <div class="price-card"><h3>Single ・ AC</h3><div class="price">₹15,000 <small>/ month</small></div></div>
+  </a>
+</div>
+</section>
+<div style="text-align: center; margin: 40px auto; padding: 25px; background: var(--card); border-radius: 12px; border: 1px solid var(--line); max-width: 500px;">
+  <h3 style="margin: 0 0 8px 0; font-size: 22px;">Book Your Bed Instantly</h3>
+  <p style="color: var(--muted); font-size: 14px; margin-bottom: 20px; padding: 0 10px;">
+    To secure your room, take a screenshot of the QR code below and upload it inside any UPI app (GPay, PhonePe, or Paytm) to pay the advance token amount.
+  </p>
+  
+  <!-- QR Code Image Display -->
+  <div style="background: #ffffff; padding: 12px; display: inline-block; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 15px;">
+    <img src="payment.JPEG" alt="DRD Boys PG Payment QR" width="220" style="display: block; border: none;">
+  </div>
+
+  <!-- Text Backup for Quick Typing/Copying -->
+  <div style="margin-top: 5px; display: block;">
+    <p style="margin: 0 0 5px 0; font-size: 12px; color: var(--muted);">Or pay directly via UPI ID:</p>
+    <div style="padding: 8px 16px; background: rgba(255,255,255,0.04); border-radius: 6px; display: inline-block; border: 1px dashed var(--line);">
+      <code style="color: var(--accent); font-size: 15px; font-weight: bold; letter-spacing: 0.5px;">manjudeka33@okaxiS</code>
+    </div>
+  </div>
+</div>
+<section id="gallery">
+<div class="section-head"><div class="eyebrow">Take a look around</div><h2>A place to feel at home.</h2><p>Explore the room and bathroom spaces at DRD Boys PG.</p></div>
+<div class="gallery">
+  <img src="photo1.jpeg" alt="Room 1">
+  <img src="photo2.jpeg" alt="Room 2">
+  <img src="photo3.jpeg" alt="Room 3">
+  <img src="photo4.jpeg" alt="Room 4">
+  <img src="photo5.jpeg" alt="Room 5">
+  <img src="photo6.jpeg" alt="Room 6">
+</div></div>
+</section>
+<section>
+<div class="section-head"><div class="eyebrow">Why DRD Boys PG</div><h2>Everything you need for everyday living.</h2></div>
+<div class="features">
+<div class="feature"><strong>📍 Convenient Location</strong><p>Located in Garchuk, near Gramin Bank.</p></div>
+<div class="feature"><strong>🛏️ Multiple Room Options</strong><p>Single, double and triple-sharing options.</p></div>
+<div class="feature"><strong>❄️ AC Options</strong><p>Choose from AC and non-AC rooms.</p></div>
+<div class="feature"><strong>🚿 Bathroom Facilities</strong><p>Clean tiled bathroom spaces for residents with 24/7 running water.</p></div>
+<div class="feature"><strong>🛜 WiFi Facilities</strong><p>High speed WiFi for residents.</p></div>
+<div class="feature"><strong>⚡Electricity</strong><p>24/7 Electricity.</p></div>
+<div class="feature"><strong>🚿 Cleanliness</strong><p>Daily room cleaning.</p></div>
+<div class="feature"><strong>🪫Accesible Charging Ports</strong><p>Easily accesible charging port near beds.</p></div>
+</div>
+</section>
+
+<section id="canteen" class="menu-section">
+  <div class="menu-container">
+    <div class="section-head" style="margin-bottom: 25px;">
+      <div class="eyebrow">Food Package</div>
+      <h2>Weekly Canteen Menu</h2>
+    </div>
+
+    <div class="table-wrapper">
+      <table class="menu-table">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Breakfast (8:15 AM)</th>
+            <th>Lunch</th>
+            <th>Snacks</th>
+            <th>Dinner</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Monday</strong></td>
+            <td>Paratha</td>
+            <td>Rice + Dal + Sabji</td>
+            <td>Tea</td>
+            <td>Veg</td>
+          </tr>
+          <tr>
+            <td><strong>Tuesday</strong></td>
+            <td>Puri + Sabji</td>
+            <td>Rice + Dal + Sabji</td>
+            <td>Tea</td>
+            <td>Egg</td>
+          </tr>
+          <tr>
+            <td><strong>Wednesday</strong></td>
+            <td>Fried Rice (Veg)</td>
+            <td>Rice + Dal + Sabji</td>
+            <td>Tea</td>
+            <td>Chicken</td>
+          </tr>
+          <tr>
+            <td><strong>Thursday</strong></td>
+            <td>Paratha</td>
+            <td>Rice + Dal + Sabji</td>
+            <td>Tea</td>
+            <td>Veg</td>
+          </tr>
+          <tr>
+            <td><strong>Friday</strong></td>
+            <td>Puri + Sabji</td>
+            <td>Rice + Dal + Sabji</td>
+            <td>Tea</td>
+            <td>Chicken</td>
+          </tr>
+          <tr>
+            <td><strong>Saturday</strong></td>
+            <td>Rice + Dal</td>
+            <td>Rice + Dal + Sabji</td>
+            <td>Tea</td>
+            <td>Fish</td>
+          </tr>
+          <tr>
+            <td><strong>Sunday</strong></td>
+            <td>Fried Rice (Veg)</td>
+            <td>Rice + Dal + Sabji</td>
+            <td>Tea</td>
+            <td>Chicken</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="menu-note">
+      ⚠️ <strong>Note:</strong> Canteen timings: <span style="color: var(--accent);">8:15 AM – 10:30 PM</span>
+    </p>
+</div>
+</section>
+<section id="faq" style="padding: 60px 6%; background: var(--card);">
+  <h2 style="font-size: clamp(32px, 5vw, 54px); margin-bottom: 24px; text-align: center;">Frequently Asked Questions</h2>
+  <div style="max-width: 800px; margin: 0 auto;">
+    <p><strong>Q: What types of sharing rooms are available?</strong><br>A: We offer premium single, double, and triple-sharing configurations.</p>
+    <hr style="border: 0; border-top: 1px solid var(--line); margin: 15px 0;">
+    <p><strong>Q: Are meals included in the rent?</strong><br>A: Yes, daily hygienic meals are included in the package.</p>
+  </div>
+</section>
+
+</section>
+<section id="location">
+<div class="location">
+<div class="map-card"><div><div class="eyebrow">Find us</div><h2 style="margin:12px 0">Garchuk, Guwahati</h2><p style="color:var(--muted)">Near Gramin Bank · PIN 781035</p><div class="buttons" style="justify-content:center"><a class="btn primary" href="https://maps.app.goo.gl/oe3XS1jZdToiE3iC7?g_st=ic" target="_blank">Get Directions</a></div></div></div>
+<div class="contact-card" id="contact"><h2>Want to know more?</h2><p>Call or message us to check room availability and arrange an enquiry.</p><div class="phone-list"><a href="tel:+919864302433">+91 98643 02433</a><a href="tel:+919864242816">+91 98642 42816</a></div><a class="btn" href="https://wa.me/919864302433?text=Hi%20DRD%20Boys%20PG%2C%20I%20would%20like%20to%20know%20about%20room%20availability." target="_blank">Message on WhatsApp</a></div>
+</div>
+</section>
+</section>
+</main>
+<footer><div>© DRD BOYS PG</div><div>drdboyspg3@gmail.com</div><div>Garchuk, Guwahati · PIN 781035</div></footer>
+</body>
+</html>
