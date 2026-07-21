@@ -1,0 +1,17 @@
+{
+  "name": "DRD Boys PG",
+  "short_name": "DRD PG",
+  "description": "Official app for DRD Boys PG in Garchuk, Guwahati.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0d0f",
+  "theme_color": "#0b0d0f",
+  "icons": [
+    {
+      "src": "payment.JPEG",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
